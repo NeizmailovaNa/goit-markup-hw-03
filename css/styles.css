@@ -15,12 +15,14 @@
     --white-color: #FFFFFF;
     --transparency-white-color: rgba(255, 255, 255, 0.6);
     --blue-color: #2196F3;
-    --hero-footer-bgc: #2F303A;
+    --footer-bgc: #2F303A;
     --portfolio-bgc: #E5E5E5;
     --team-bgc: #F5F4FA;
 }
 
 body {
+    width: 1600px;
+
     font-family: Roboto, sans-serif;
     color: var(--main-color);
 }
@@ -31,21 +33,21 @@ body {
 
 }
 
-.nav-main{
+.navigation-div {
     display: flex;
+    align-items: center;
+}
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
-.nav-main .item { 
-    margin-right: 50px;
-    background-color: green;
-}
-
-.nav-main .item :last-child {
-    margin-right: 0;
-}
-
-}
 .web-studio {
+    margin-right: 93px;
+    margin-left: 215px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -59,21 +61,52 @@ body {
     color: var(--main-color);
 }
 
+.nav-main{
+    display: flex;
+    padding-left: 0px;
+}
+.nav-main .item + .item { 
+    margin-left: 50px;
+}
+
+.nav-main .item,
+ {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .nav-main .link {
+    color: var(--main-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--main-color);
+    
+}
+
+.nav-contacts {
+    display: flex;
+    margin-left: auto;
+    padding-left: 0px;
+}
+    
+.nav-contacts .item-contacts + .item-contacts{
+     margin-left: 50px;
+}
+
+.nav-contacts .item-contacts {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .nav-contacts,
 .contact {
+    color: var(--secondary-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-    color: var(--secondary-color);
+    
 }
 
 .nav-main .link:hover,
@@ -93,26 +126,34 @@ body {
 /* main */
 /* hero */
 .hero {
-    background: var(--hero-footer-bgc);
+    text-align: center;
+    background: var(--footer-bgc); 
 }
 
 .hero-title {
+    margin: 0px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+
     color: var(--white-color);  
 }
 
 .hero-button {
+    margin-top: 40px;
+
+    color: var(--white-color);    
+    background: var(--blue-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: var(--white-color);    
-    background: var(--blue-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    
     border-radius: 4px;
 }
 
@@ -229,7 +270,7 @@ body {
 
 /* footer */
 .footer{
-    background: var(--hero-footer-bgc); 
+    background: var(--footer-bgc); 
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
