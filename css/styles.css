@@ -30,6 +30,21 @@ body {
     background-color: var(--white-color);
 
 }
+
+.nav-main{
+    display: flex;
+}
+
+.nav-main .item { 
+    margin-right: 50px;
+    background-color: green;
+}
+
+.nav-main .item :last-child {
+    margin-right: 0;
+}
+
+}
 .web-studio {
     font-family: Raleway, sans-serif;
     font-weight: 700;
