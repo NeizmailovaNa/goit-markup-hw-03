@@ -118,6 +118,7 @@ body {
 }
 
 .web-studio,
+.web-studio-footer,
 .link,
 .contact {
     text-decoration: none
@@ -313,12 +314,33 @@ body {
 
 /* footer */
 .footer{
+    position: absolute;
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+
     background: var(--footer-bgc); 
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
 }
 
+.web-studio-footer {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 215px;
+    margin-top: 60px;
+    margin-right: 1240px;
+    padding: 0px;
+
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+
+    color: var(--blue-color);
+}
 .logo-light{
     color: var(--white-color);
 } 
@@ -326,6 +348,21 @@ body {
 .address{ 
     font-style: normal;
 }
+
+.address-list {
+    padding: 0px;
+    margin: 0px;
+}
+
+.address-link {
+    margin-left: 215px;
+    margin-bottom: 9px;
+}
+
+.address-link:last-child {
+    margin-bottom: 60px;
+}
+
 .company-adress {
     color: var(--white-color);
 }
