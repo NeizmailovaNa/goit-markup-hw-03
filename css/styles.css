@@ -29,8 +29,9 @@ body {
 
 /* header */
 .header {
-    background-color: var(--white-color);
+    border: 1px solid #ECECEC;
 
+    background-color: var(--white-color);
 }
 
 .navigation-div {
@@ -125,6 +126,7 @@ body {
 
 /* main */
 /* hero */
+
 .hero {
     text-align: center;
     background: var(--footer-bgc); 
@@ -208,8 +210,21 @@ body {
 }
 
 /* buttons-portfolio */
+
 .buttons-title {
     display: none;
+}
+
+.buttons-portfolio {
+    display: flex;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    justify-content:center;
+}
+
+.buttons-portfolio .buttons-list + .buttons-list {
+    margin-left: 52px;
 }
 
 .button-all,
@@ -217,11 +232,15 @@ body {
 .button-apps,
 .button-design,
 .button-marketing{
+    margin-top: 100px;
+    margin-bottom: 56px;
+
+    color: var(--main-color);
+
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: 0.03em;
-    color: var(--main-color);
     background: #F5F4FA;
     border-radius: 4px;
     cursor: pointer;
@@ -247,6 +266,30 @@ body {
     background: var(--blue-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
+}
+
+.examples-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 215px;
+    margin-right: 215px;
+}
+
+.examples-list .portfolio-list {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.examples-list .portfolio-list:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.examples-list .portfolio-list:nth-last-child(-n+3) {
+    margin-bottom: 94px;
 }
 
 .examples-title-main{
