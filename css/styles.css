@@ -19,17 +19,19 @@
     --portfolio-bgc: #E5E5E5;
     --team-bgc: #F5F4FA;
 }
-
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
 body {
-    width: 1600px;
-
     font-family: Roboto, sans-serif;
     color: var(--main-color);
 }
 
 /* header */
 .header {
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
 
     background-color: var(--white-color);
 }
@@ -474,9 +476,4 @@ body {
 .company-adress,
 .footer-contacts {
     text-decoration: none
-}
-
-/*Убираем маркеры списка*/
-li {
-    list-style-type: none;
 }
